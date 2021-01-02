@@ -1,0 +1,25 @@
+.windowContainer{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #040021;
+}
+
+.menuContainer{
+    width: 75vw;
+    margin: auto;
+    background: #141221;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridContainer{
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+}

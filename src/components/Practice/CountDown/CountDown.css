@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.countdownContainer{
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: hide;
+    animation-duration: 3s;
+}
+
+@keyframes hide{
+    0% {
+        background: rgba(10, 10, 79, 0.55);
+        opacity: 100;
+    }
+    84%{
+        background: rgba(10, 10, 79, 0.55);
+    }
+    99% {
+        background: rgb(255,255,255);
+        opacity: 100;
+    }
+    100%{
+        background: rgba(0,0,0,0);
+        opacity: 0;
+    }
+}
+.countdownBox{
+    position: relative;
+    display: inline-block;
+    padding: 3vw 6vw;
+    font-size: 5vw;
+    overflow: hidden;
+    transition: 0.2s;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes blink{
+    0% {
+        color: rgb(255, 255, 255);
+        background: white;
+        box-shadow: 0 0 1vw  rgb(255, 255, 255),  0 0 4vw  rgb(255, 255, 255),  0 0 5vw  rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        box-shadow: 0 0 2vw rgb(10, 10, 79),  0 0 2vw rgb(10, 10, 79),  0 0 2vw rgb(10, 10, 79);
+        background: rgb(10, 10, 79);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        background: white;
+        box-shadow: 0 0 1vw  rgb(255, 255, 255),  0 0 4vw  rgb(255, 255, 255),  0 0 5vw  rgb(255, 255, 255);
+        
+    }
+}
