@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import keyColors from './keyColors';
+import keyColors from '../keyColors';
 
 const KeyButton = ({ mainKey, expectedKeys, badPrevious, shift }) => {
     const buttonSizes = {

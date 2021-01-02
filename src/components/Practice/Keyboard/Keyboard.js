@@ -1,8 +1,8 @@
 import React from 'react';
 
-import KeyButton from './KeyButton';
+import KeyButton from './KeyButton/KeyButton';
 import keysData from './keysData';
-
+import './Keyboard.css'
 
 const row = {
     display: "flex",

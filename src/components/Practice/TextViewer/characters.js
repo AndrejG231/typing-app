@@ -44,7 +44,7 @@ const characters = {
     'Q': ['KeyQ', 'ShiftRight'],
     'R': ['KeyR', 'ShiftRight'],
     'S': ['KeyS', 'ShiftRight'],
-    'T': ['KeyT', 'ShiftLeft'],
+    'T': ['KeyT', 'ShiftRight'],
     'U': ['KeyU', 'ShiftLeft'],
     'V': ['KeyV', 'ShiftRight'],
     'W': ['KeyW', 'ShiftRight'],

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './TextViewer.css';
 
 const centerContent = {
     display: 'flex',

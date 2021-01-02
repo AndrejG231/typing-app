@@ -145,42 +145,43 @@ for i in mylist:
 Break statement exits the loop before finish.
 Continue statement stops executing code and continues to next iteration.`
 const Levels = {
-    pythonBasics : {
-        id: 0,
-        name: 'Python Basics',
-        description: 'Python is a very simple language, this practise provides some basic python syntax.',
-        text: pythonBasicsText
-    },
-    pythonStringConstants : {
-        id: 1,
-        name: 'Python String Constants',
-        description: 'Overview of some advanced Python string constants.',
-        text: pythonStringConstants
-    },
-    pythonNumericTypes : {
-        id: 2,
-        name: 'Python Numeric Types',
-        description: 'Explanation of Python\'s basic numeric types.',
-        text: pythonNumericTypes
-    },
-    pythonConditions : {
-        id: 3,
-        name: 'Python Conditions',
-        description: 'Learn how to use python conditions.',
-        text: pythonConditions
-    },
-    pythonTuples : {
-        id: 4,
-        name: 'Python Tuples',
-        description: 'Tuples are used to store multiple items in a single variable. Here are is how you use them.',
-        text: pythonTuples
-    },
-    pythonLoops : {
-        id: 5,
-        name: 'Python Loops',
-        description: 'Explained basic Python loops.',
-        text: pythonLoops
-    }
+    codeTyping: {
+        pythonBasics : {
+            id: 0,
+            name: 'Python Basics',
+            description: 'Python is a very simple language, this practise provides some basic python syntax.',
+            text: pythonBasicsText
+        },
+        pythonStringConstants : {
+            id: 1,
+            name: 'Python String Constants',
+            description: 'Overview of some advanced Python string constants.',
+            text: pythonStringConstants
+        },
+        pythonNumericTypes : {
+            id: 2,
+            name: 'Python Numeric Types',
+            description: 'Explanation of Python\'s basic numeric types.',
+            text: pythonNumericTypes
+        },
+        pythonConditions : {
+            id: 3,
+            name: 'Python Conditions',
+            description: 'Learn how to use python conditions.',
+            text: pythonConditions
+        },
+        pythonTuples : {
+            id: 4,
+            name: 'Python Tuples',
+            description: 'Tuples are used to store multiple items in a single variable. Here are is how you use them.',
+            text: pythonTuples
+        },
+        pythonLoops : {
+            id: 5,
+            name: 'Python Loops',
+            description: 'Explained basic Python loops.',
+            text: pythonLoops
+        }}
 };
 
 export default Levels;

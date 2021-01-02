@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import { Practice, Menu } from './components';
-
+import { Practice, Menu, MainMenu, UndefinedRoute } from './components';
 
 const App = () => {
 
@@ -11,8 +10,14 @@ const App = () => {
                 <Route path="/play/" >
                     <Practice />
                 </Route>
-                <Route exact path="/">
+                <Route path="/menu/">
                     <Menu />
+                </Route>
+                <Route exact path="/">
+                    <MainMenu />
+                </Route>
+                <Route path="/">
+                    <UndefinedRoute />
                 </Route>
             </Switch>
         </Router>

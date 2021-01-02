@@ -30,7 +30,9 @@ const practiceContaier = {
 }
 
 const Practice = () => {
-    const text = Levels[useLocation().pathname.replace('/play/','')]['text'];
+    let Lessons = {};
+    Object.keys(Levels).forEach(item => Lessons = {...Levels[item], ...Lessons});
+    const text = Lessons[useLocation().pathname.replace('/play/','')]['text'];
     const [nextLetter, setNextLetter] = useState('');
     const [expectedKeys, setExpectedKeys] = useState([]);
     const [badPrevious, setBadPrevious] = useState('');
@@ -67,7 +69,7 @@ const Practice = () => {
     };
 
     const handleKeyDown = (event) => {
-        if(time > 0){
+        if(time > -50){
             handleShift(event, true);
             handleKeyPress(event);
         }

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './Status.css'
 const statusContainer = {
     width: "810px",
     height: "30px",
