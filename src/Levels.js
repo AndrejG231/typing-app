@@ -146,7 +146,7 @@ for i in mylist:
 ^^prints 0,1,2
 Break statement exits the loop before finish.
 Continue statement stops executing code and continues to next iteration.`
-const Levels = {
+const Levels = () =>{return {
     wordTyping: {
         topWords100 : {
             id: 0,
@@ -216,6 +216,6 @@ const Levels = {
             description: 'Explained basic Python loops.',
             text: pythonLoops
         }}
-};
+}};
 
 export default Levels;

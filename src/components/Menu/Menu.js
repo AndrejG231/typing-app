@@ -7,7 +7,7 @@ import Levels from '../../Levels';
 import { useLocation } from 'react-router-dom';
 
 const Menu = () => {
-    const Lessons = Levels[useLocation().pathname.replace('/menu/','')];
+    const Lessons = Levels()[useLocation().pathname.replace('/menu/','')];
     return (
         <div className="windowContainer">
             <div className="menuContainer">

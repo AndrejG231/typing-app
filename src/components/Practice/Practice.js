@@ -4,7 +4,6 @@ import {Keyboard, TextViewer, Status, CountDown} from '.';
 
 import characters from './TextViewer/characters';
 import Levels from '../../Levels'
-
 import './Practice.css';
 
 const centerAll = {
@@ -31,8 +30,8 @@ const practiceContaier = {
 
 const Practice = () => {
     let Lessons = {};
-    Object.keys(Levels).forEach(item => Lessons = {...Levels[item], ...Lessons});
-    const text = Lessons[useLocation().pathname.replace('/play/','')]['text'];
+    Object.keys(Levels()).forEach(item => Lessons = {...Levels()[item], ...Lessons});
+    const [text, setText] = useState(Lessons[useLocation().pathname.replace('/play/','')]['text']);
     const [nextLetter, setNextLetter] = useState('');
     const [expectedKeys, setExpectedKeys] = useState([]);
     const [badPrevious, setBadPrevious] = useState('');
