@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { Practice, Menu, MainMenu, UndefinedRoute } from './components';
 
 const App = () => {
-
     return (
         <Router>
             <Switch>

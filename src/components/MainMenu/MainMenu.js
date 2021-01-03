@@ -16,7 +16,7 @@ const MainMenu = () => {
                         <Link to={'/menu/codeTyping'}>
                             <li className="navLink">Code Typing Lessons</li>
                         </Link>
-                        <Link to={'speedTest'}>
+                        <Link to={'/menu/wordTyping'}>
                             <li className="navLink">Word Typing Lessons</li>
                         </Link>
                         <Link to={'speedTest'}>

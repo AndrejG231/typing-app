@@ -1,3 +1,5 @@
+import getRandomText from './textData/getRandomText';
+
 const pythonBasicsText = `\
 To print a string in Python 3:
 print("Hello World")
@@ -145,6 +147,38 @@ for i in mylist:
 Break statement exits the loop before finish.
 Continue statement stops executing code and continues to next iteration.`
 const Levels = {
+    wordTyping: {
+        topWords100 : {
+            id: 0,
+            name: 'Top English Words',
+            description: '100 characters long practice session.',
+            text: getRandomText('topEnglishWords', 100),
+        },
+        topWords200 : {
+            id: 1,
+            name: 'Top English Words',
+            description: '200 characters long practice session.',
+            text: getRandomText('topEnglishWords', 200),
+        },
+        topWords500 : {
+            id: 2,
+            name: 'Top English Words',
+            description: '500 characters long practice session.',
+            text: getRandomText('topEnglishWords', 500),
+        },
+        topWords1000 : {
+            id: 3,
+            name: 'Top English Words',
+            description: '1000 characters long practice session.',
+            text: getRandomText('topEnglishWords', 1000),
+        },
+        topWords2000 : {
+            id: 4,
+            name: 'Top English Words',
+            description: '2000 characters long practice session.',
+            text: getRandomText('topEnglishWords', 2000),
+        },
+    },
     codeTyping: {
         pythonBasics : {
             id: 0,
