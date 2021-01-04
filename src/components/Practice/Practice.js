@@ -31,7 +31,7 @@ const practiceContaier = {
 const Practice = () => {
     let Lessons = {};
     Object.keys(Levels()).forEach(item => Lessons = {...Levels()[item], ...Lessons});
-    const [text, setText] = useState(Lessons[useLocation().pathname.replace('/play/','')]['text']);
+    const [text] = useState(Lessons[useLocation().pathname.replace('/play/','')]['text']);
     const [nextLetter, setNextLetter] = useState('');
     const [expectedKeys, setExpectedKeys] = useState([]);
     const [badPrevious, setBadPrevious] = useState('');

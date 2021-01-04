@@ -80,7 +80,7 @@ const TextViewer = ({index ,text, setNextCharacter}) => {
             lineCount++;
         }
         setTextTopPosition(120- 60 * lineCount);
-        setTextLeftPosition(50 - 15 * charIndex);
+        setTextLeftPosition(50 - 16.5 * charIndex);
     }, [text, index])
 
 

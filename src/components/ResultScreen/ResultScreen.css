@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.resultsContainer{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #040021;
+}
+
+.resTextContainer{
+    background: #141221;
+}
+
+.resText{
+    font-size: 20px;
+    color: white
+}
+
+.resWrongText{
+    color: red;
+    background: pink;
+}
