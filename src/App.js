@@ -5,7 +5,6 @@ import { Practice, Menu, MainMenu, UndefinedRoute, ResultScreen } from './compon
 const App = () => {
     return (
         <Router>
-            <ResultScreen />
             <Switch>
                 <Route path="/play/" >
                     <Practice />
@@ -15,6 +14,9 @@ const App = () => {
                 </Route>
                 <Route exact path="/">
                     <MainMenu />
+                </Route>
+                <Route path="/results/">
+                    <ResultScreen />
                 </Route>
                 <Route path="/">
                     <UndefinedRoute />

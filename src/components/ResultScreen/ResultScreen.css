@@ -8,18 +8,24 @@
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background: #040021;
 }
 
 .resTextContainer{
-    background: #141221;
+    max-height: 90%;
+    max-width: 55%;
+    background: #3b3b4f;
+    padding: 0px;
+    border: 20px solid #141221;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .resText{
-    font-size: 20px;
+    margin: 10px;
     color: white
 }
 
@@ -27,3 +33,62 @@
     color: red;
     background: pink;
 }
+
+.resStatsContainer{
+    width: 25%;
+    height: 92%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resStat{
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+}
+
+.resStatText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.resStatTitle{
+    color: white;
+    font-size: 20px;
+}
+
+.resStatIcon{
+    color: white;
+    font-size: 70px;
+    position: relative;
+    top: -15px;
+    left: 20px;
+}
+
+.resStatValue{
+    color: white;
+    font-size: 40px;
+}
+@media screen and (max-width: 1024px){
+    .resultsContainer{
+        flex-direction: column;
+    }
+    .resTextContainer{
+        order: -1;
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .resStatsContainer{
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { GoTextSize, } from 'react-icons/go';
+import {BiTimer, BiCommentError} from 'react-icons/bi';
+import {RiStarSFill} from 'react-icons/ri';
 import './ResultScreen.css'
 
 const indexes = [0,2,8,12,13,54, 99, 120,121,122,223,224,225,226,227];
@@ -28,13 +30,50 @@ elif a == b:
 else:
     print("a is greater than b")`
 
+const characters = 50
+
+const errors = 20
+
+const time = 5040
 
 const ResultScreen = () => {
+    const textStyle = {
+        fontSize: 20000/text.length
+    }
     return (
         <div className="resultsContainer">
+            <div className="resStatsContainer">
+                <div className="resStat">
+                    <div className="resStatText">
+                        <h1 className="resStatTitle">Characters per minute</h1>
+                        <h4 className="resStatValue">{characters/time}</h4>
+                    </div>
+                    <div className="resStatIcon"><GoTextSize /></div>
+                </div>
+                <div className="resStat">
+                    <div className="resStatText">
+                        <h1 className="resStatTitle">Time</h1>
+                        <h4 className="resStatValue">{time}</h4>
+                    </div>
+                    <div className="resStatIcon"><BiTimer /></div>
+                </div>
+                <div className="resStat">
+                    <div className="resStatText">
+                        <h1 className="resStatTitle">Errors</h1>
+                        <h4 className="resStatValue">{errors}</h4>
+                    </div>
+                    <div className="resStatIcon"><BiCommentError /></div>
+                </div>
+                <div className="resStat">
+                    <div className="resStatText">
+                        <h1 className="resStatTitle">Overall Score</h1>
+                        <h4 className="resStatValue">{characters/time/errors}</h4>
+                    </div>
+                    <div className="resStatIcon"><RiStarSFill /></div>
+                </div>
+            </div>
             <div className="resTextContainer">
-                <p className="resText">
-                    <pre>
+                <p className="resText" style={textStyle}>
                     {text.split('').map((item, index) => {
                         if(indexes.indexOf(index) >= 0){
                             return <span className="resWrongText">{item}</span>
@@ -42,7 +81,6 @@ const ResultScreen = () => {
                             return item
                         }
                     })}
-                    </pre>
                 </p>
             </div>
             <div className="resStatsContainer">
