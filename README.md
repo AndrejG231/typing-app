@@ -2,23 +2,23 @@
 
 Idea of a project that allows users to practise and compete in their typing speeed.
 
-**Uses:
+## Uses:
 React, React Router, React Icons, React Scrollbar,
 
-**To do:
+## To do:
 
-- ~~keyboard keys visualization
-- ~~text viewer
-- ~~character codes and keys library
-- ~~menus containing "mock" lessons
-- ~~lessons and word collection
+- ~~keyboard keys visualization~~
+- ~~text viewer~~
+- ~~character codes and keys library~~
+- ~~menus containing "mock" lessons~~
+- ~~lessons and word collection~~
 - results screen
-- **server side developmet
+- **server side developmet**
 - user stats database
 - about section
 - perfromance graphs
 - responsive redesign
-- **vim playground setup
+- **vim playground setup**
 - setting up more lessons
 
 - ..realtime typing battle???
